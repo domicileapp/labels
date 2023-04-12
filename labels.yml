@@ -31,7 +31,7 @@
   description: A large feature or change in development pattern that needs community feedback.
   color: '5319E7'
 - name: lifecycle/rejected
-  description: For issues and PRs the community has determined are not a priority and will not be implemented at this time.
+  description: Will not be implemented at this time.
   color: '5319E7'
 - name: lifecycle/needs-rebase
   color: '5319E7'
