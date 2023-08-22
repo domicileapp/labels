@@ -35,6 +35,7 @@ resource "github_repository" "domicile" {
 
   vulnerability_alerts = true
   visibility           = "public"
+  allow_auto_merge     = true
   has_issues           = true
   has_discussions      = true
   has_projects         = true

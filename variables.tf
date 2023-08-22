@@ -71,7 +71,11 @@ locals {
   type = {
     "bug" = {
       description = "A bug in Domicile; unintended behavior.",
-      color       = local.colors.yellow
+      color       = local.colors.red
+    }
+    "epic" = {
+      description = "A large issue that may have many sub issues.",
+      color       = local.colors.purple
     }
     "deprecation" = {
       description = "Related to a feature or part of code being deprecated",
@@ -101,19 +105,5 @@ locals {
       description = "CI/CD, testing, etc. for domicile.",
       color       = local.colors.yellow
     }
-  }
-}
-
-variable "type_labels" {
-  type = map(string)
-  default = {
-    "bug"         = "A bug in Domicile; unintended behavior."
-    "deprecation" = "Related to a feature or part of code being deprecated"
-    "docs"        = "Related to documentation"
-    "feature"     = "A feature request for Domicile; new or enhanced functionality"
-    "meta"        = "Internal repo conversations. Typically should be in a discussion instead of an issue."
-    "security"    = "Relating to security. Could include authentication/authorization or vulnerabilities."
-    "support"     = "Questions, supporting users, etc."
-    "tests"       = "CI/CD, testing, etc. for domicile."
   }
 }
